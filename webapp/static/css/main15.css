@@ -1,0 +1,76 @@
+#bringBody, #putBody{
+   cursor: wait;
+}
+div#content{
+   text-align:center;
+   font-weight:bold;
+   font-size:30px;
+   padding-top:50px;
+}
+div#loadImg{
+   text-align:center;
+}
+
+#mainBody{
+    font-family:Helvetica;
+}
+.title{
+    margin: 70px 0 45px 0;
+    font: 700 35px Helvetica;
+    text-shadow: 1px 1px 0 rgb(223 227 229), 2.8px 0.5px 0 rgb(0 0 0 / 10%);
+}
+#mainTable {
+    font-size:20px;
+    border-top: 1px solid gray; 
+    border-collapse:collapse;
+}
+#inputTable{
+    border:none;
+    font-size: 25px;
+}
+#inputDiv{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.id, .btn {text-align:center;}
+.loc, .exist, .name, .note {text-align:right;}
+.name {
+    width: 200px !important;
+    padding: 0 10px;
+}
+.note {
+    width: 120px !important;
+}
+.btn {
+    width: 150px;
+    text-align: right;
+    padding-right: 25px;
+}
+#mainTable tr th, #mainTable tr td {
+    min-width:100px; 
+    word-break:keep-all; 
+    white-space:nomal;
+    height:35px;
+}
+#mainTable tr, #mainTable td {
+    border-bottom: 1px solid gray; 
+}
+#list{
+    background: lightblue;
+}
+.btnInput{
+    width: 60px;
+    background-color: #3399CC;
+    border-radius: 5px;
+    font-weight: bold;
+    height: 24px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor:pointer;
+    
+}
+#blank{
+    height:20px;
+}

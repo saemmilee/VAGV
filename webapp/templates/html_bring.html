@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="{{url_for('static', filename='css/main15.css')}}">
+<html>
+    <head>
+        <title> BRING PAGE </title>
+    </head>
+    <body id="bringBody">
+        <div id="content"> [BRING] Please wait a few seconds...</div>
+        <div id="loadImg">
+            <img src="{{url_for('static', filename='image/loading.gif')}}">
+        </div>        
+        <script>
+            window.onload = function(){
+                window.location.href = '/bring/{{id}}/activate';
+            }
+        </script>
+    </body>
+</html>

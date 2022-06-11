@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="{{url_for('static', filename='css/main15.css')}}">
+
+<html>
+    <body>
+    <div id="inputDiv">
+        <h1>Location is [ {{loc}} ]</h1>
+        <form action = "/put" method = "POST">
+            <table id="inputTable">
+                <tr>
+                    <td>Product Name :</td>
+                    <td><input type = "text" name = "Name" autocomplete="off" required/></td>
+                </tr>
+                <tr>
+                    <td>Note :</td>
+                    <td><input type = "text" name = "Note" autocomplete="off" required/></td>
+                </tr>
+                <tr id="blank"></tr>
+                <tr collspan="2">
+                    <td>
+                        <input type="hidden" name="Loc" value="{{loc}}"/>
+                        <input class="btnInput" type = "submit" value = "submit" />
+                    </td>
+                    
+                </tr>
+            </table>
+        </form>
+        </div>
+    </body>
+</html>

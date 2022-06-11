@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="{{url_for('static', filename='css/main15.css')}}">
+<html>
+    <head>
+        <title> PUT PAGE </title>
+    </head>
+    <body id="putBody">
+        <div id="content"> [PUT] Please wait a few seconds...</div>
+        <div id="loadImg">
+            <img src="{{url_for('static', filename='image/loading.gif')}}">
+        </div>
+        <div>
+            <form name = "hiddenForm" action = "/put/activate" method = "POST">
+                <input type="hidden" name="Name" value="{{name}}"/>
+                <input type="hidden" name="Note" value="{{note}}"/>
+                <input type="hidden" name="Loc" value="{{loc}}"/>
+            </form>
+        <div>
+        <script>
+            window.onload = function(){
+                document.hiddenForm.submit();
+            }
+        </script>
+    </body>
+</html>
